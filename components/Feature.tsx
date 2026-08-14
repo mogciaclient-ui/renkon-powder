@@ -1,0 +1,3 @@
+import {Flower2,Leaf,Utensils} from "lucide-react";
+const features=[{icon:Flower2,t:"佐賀県白石産れんこん使用",d:"佐賀県白石町福富産のれんこんを使用しています。"},{icon:Leaf,t:"自社工場で微粉末に",d:"洗浄・乾燥・粉末加工まで自社工場で丁寧に行っています。"},{icon:Utensils,t:"食物繊維・ポリフェノール",d:"れんこんに含まれる食物繊維やポリフェノールを手軽に摂れます。"}];
+export default function Feature(){return <section id="about" className="section paper-band lotus-scatter"><div className="container"><h2 className="reference-title">れんこんパウダーの特徴</h2><div className="grid md:grid-cols-3 gap-5 lg:gap-12">{features.map(({icon:Icon,t,d})=><article key={t} className="feature-box"><Icon size={45} strokeWidth={1} className="mx-auto text-[#d3b487]"/><h3 className="serif text-[17px] mt-5 mb-3">{t}</h3><p className="text-[12px] leading-7">{d}</p></article>)}</div></div></section>}
