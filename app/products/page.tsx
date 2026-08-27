@@ -1,8 +1,16 @@
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
+import type { Metadata } from "next";
 import Image from "next/image";
 import { ArrowDown, ExternalLink, MapPin } from "lucide-react";
 import { shopAreas } from "../../data/shopAreas";
+
+export const metadata: Metadata = {
+  title: "商品一覧",
+  openGraph: {
+    title: "商品一覧",
+  },
+};
 
 const products = [
   {
@@ -114,8 +122,6 @@ export default function ProductsPage() {
               <div className="px-6 py-10 text-center sm:px-10 md:px-12 md:py-12 md:text-left lg:px-16">
                 <span className="eyebrow">RECOMMENDED</span>
                 <h3 className="serif mt-3 text-[26px] font-normal tracking-[.1em] sm:text-[30px]">れんこんパウダー</h3>
-                <p className="mt-5 text-[13px] leading-7 text-[#786b61]">商品説明は現在確認中です。</p>
-                <p className="serif mt-6 text-lg tracking-[.08em]">価格：確認中</p>
                 <a href="/" className="btn mt-7 min-h-14 bg-[#a9825b] px-9 text-white">
                   詳しくはこちら <span aria-hidden="true">→</span>
                 </a>
