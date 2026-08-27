@@ -10,5 +10,5 @@ import Footer from "../components/Footer";
 
 export default function Home() {
   const jsonLd = { "@context":"https://schema.org", "@type":"Product", name:"れんこんパウダー", description:"国産れんこん100%の無添加パウダー", brand:{"@type":"Brand",name:"れんこんパウダー"}, offers:{"@type":"Offer",priceCurrency:"JPY",price:"1980",availability:"https://schema.org/InStock"} };
-  return <><script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(jsonLd)}}/><Header/><main><Hero/><Feature/><Product/><HowTo/><Recipe/><Voice/><FAQ/></main><Footer/></>;
+  return <><script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(jsonLd)}}/><Header instagramUrl="https://www.instagram.com/iimono_mitsuse?utm_source=qr"/><main><Hero/><Feature/><Product/><HowTo/><Recipe/><Voice/><FAQ/></main><Footer/></>;
 }
